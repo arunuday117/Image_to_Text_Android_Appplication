@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Choose image to convert"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Gallery"
+        android:textAllCaps="false"
+        android:layout_marginLeft="90sp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:drawableTop="@drawable/ic_baseline_photo_library_24"
+        android:paddingTop="15dp"
+        android:drawablePadding="-20dp"
+        android:background="@drawable/button_hds"
+        android:textColor="@color/gray"
+        android:textSize="19dp"/>
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20sp"
+        android:text="Camera"
+        android:textAllCaps="false"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_hds"
+        android:textColor="@color/gray"
+        android:drawableTop="@drawable/ic_baseline_photo_camera_24"
+        android:paddingTop="15dp"
+        android:drawablePadding="-20dp"
+        android:textSize="19dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Convert"
+        android:textAllCaps="false"
+        android:layout_marginLeft="90sp"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="20dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/button_hds"
+        android:textSize="19dp"
+        android:textColor="@color/gray"
+        android:drawableTop="@drawable/ic_baseline_build_24"
+        android:paddingLeft="23dp"
+        android:drawablePadding="-20dp"
+        />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/button2"
+        android:background="@drawable/button_hds"
+        android:drawableTop="@android:drawable/ic_menu_crop"
+        android:drawablePadding="-20dp"
+        android:paddingLeft="23dp"
+        android:text="Crop"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/gray"
+        android:textSize="19dp" />
+
+
+
+</RelativeLayout>
